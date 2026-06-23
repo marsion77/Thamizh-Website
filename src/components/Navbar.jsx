@@ -29,7 +29,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 w-full z-50 bg-white shadow-md py-3 transition-all duration-300">
+    <nav className={`sticky top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-white py-4'}`}>
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2 md:gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>

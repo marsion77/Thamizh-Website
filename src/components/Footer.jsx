@@ -83,7 +83,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center mt-8 text-gray-400">
-          <p>&copy; 2026 East Coast Surf and Paddle. All Rights Reserved.</p>
+          <p>&copy; {currentYear} East Coast Surf and Paddle. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
