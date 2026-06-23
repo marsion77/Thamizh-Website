@@ -32,11 +32,11 @@ const Navbar = () => {
     <nav className="sticky top-0 w-full z-50 bg-white shadow-md py-3 transition-all duration-300">
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center cursor-pointer relative" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <img src={logoImg} alt="East Coast Surf & Paddle Logo" className="absolute -left-2 md:-left-4 top-[-30px] md:top-[-42px] w-28 h-28 md:w-40 md:h-40 object-contain drop-shadow-2xl z-50" />
-          <span className="text-2xl md:text-3xl font-black tracking-wide text-deepBlue leading-tight drop-shadow-sm ml-20 md:ml-28">
+        <div className="flex items-center gap-2 md:gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <img src={logoImg} alt="East Coast Surf & Paddle Logo" className="w-20 h-20 md:w-28 md:h-28 object-contain drop-shadow-md" />
+          <span className="text-base md:text-xl font-bold tracking-wide text-deepBlue leading-tight drop-shadow-sm">
             East Coast<br/>
-            <span className="text-oceanBlue">Surf & Paddle</span>
+            <span className="text-oceanBlue text-sm md:text-xl block md:inline">Surf & Paddle</span>
           </span>
         </div>
 
@@ -72,39 +72,54 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {navOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white shadow-xl absolute w-full top-full left-0 overflow-hidden"
-          >
-            <ul className="flex flex-col items-center py-6 gap-4">
-              {navLinks.map((link, index) => (
-                <li key={index} className="w-full text-center">
-                  <Link
-                    to={link.to}
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-100}
-                    activeClass="!text-oceanBlue border-l-4 border-oceanBlue bg-gray-50"
-                    onClick={() => setNavOpen(false)}
-                    className="block w-full py-2 px-4 text-xl font-bold text-gray-800 hover:text-oceanBlue border-l-4 border-transparent transition-all"
-                  >
-                    {link.name}
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 bg-black/50 z-40 md:hidden"
+              onClick={() => setNavOpen(false)}
+            />
+            <motion.div
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '100%' }}
+              transition={{ type: 'tween', duration: 0.3 }}
+              className="fixed top-0 right-0 w-64 h-screen bg-white shadow-2xl z-50 md:hidden flex flex-col"
+            >
+              <div className="flex justify-end p-6">
+                <button onClick={() => setNavOpen(false)} className="text-3xl text-deepBlue focus:outline-none">
+                  <FaTimes />
+                </button>
+              </div>
+              <ul className="flex flex-col py-4 mt-2">
+                {navLinks.map((link, index) => (
+                  <li key={index} className="w-full">
+                    <Link
+                      to={link.to}
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      offset={-100}
+                      activeClass="!text-oceanBlue border-l-4 border-oceanBlue bg-gray-50"
+                      onClick={() => setNavOpen(false)}
+                      className="block w-full py-4 px-8 text-xl font-bold text-gray-800 hover:text-oceanBlue border-l-4 border-transparent transition-all"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+                <li className="pt-8 px-6">
+                  <Link to="adventures" smooth={true} duration={500} offset={-100} onClick={() => setNavOpen(false)} className="bg-vibrantAccent text-deepBlue font-bold py-4 rounded-full shadow-md cursor-pointer block text-center w-full">
+                    Book Now
                   </Link>
                 </li>
-              ))}
-              <li className="pt-2">
-                <Link to="adventures" smooth={true} duration={500} offset={-100} onClick={() => setNavOpen(false)} className="bg-vibrantAccent text-deepBlue font-bold px-8 py-3 rounded-full shadow-md cursor-pointer block text-center">
-                  Book Now
-                </Link>
-              </li>
-            </ul>
-          </motion.div>
+              </ul>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </nav>
