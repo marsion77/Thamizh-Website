@@ -41,7 +41,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-7xl font-bold leading-tight mb-6"
           >
-            Experience the <span className="text-vibrantAccent">Thrill</span> of the Ocean
+            Surfing & Paddling Adventures in <span className="text-vibrantAccent">Pondicherry</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}

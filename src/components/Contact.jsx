@@ -24,63 +24,32 @@ const Contact = () => {
           ></motion.div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-12 bg-white rounded-3xl shadow-xl overflow-hidden">
+        <div className="max-w-5xl mx-auto bg-oceanBlue text-white p-10 md:p-16 rounded-3xl shadow-2xl flex flex-col items-center text-center">
+          <h3 className="text-3xl font-bold mb-6">Get in Touch</h3>
+          <p className="mb-12 text-lightCyan max-w-2xl text-lg">We'd love to hear from you. Reach out to us for any inquiries or to book your adventure.</p>
           
-          {/* Contact Info */}
-          <div className="lg:w-1/3 bg-oceanBlue text-white p-10 flex flex-col justify-center">
-            <h3 className="text-3xl font-bold mb-8">Get in Touch</h3>
-            <p className="mb-10 text-lightCyan">We'd love to hear from you. Reach out to us for any inquiries or to book your adventure.</p>
-            
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="text-vibrantAccent text-2xl mt-1"><FaPhoneAlt /></div>
-                <div>
-                  <h4 className="font-semibold text-lg">Phone Number</h4>
-                  <p className="text-gray-200">+91 9791351801<br/>+91 9344702133</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="text-vibrantAccent text-2xl mt-1"><FaEnvelope /></div>
-                <div>
-                  <h4 className="font-semibold text-lg">Email</h4>
-                  <p className="text-gray-200 break-all">eastcoastsurfeastcoastsurf@gmail.com</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="text-vibrantAccent text-2xl mt-1"><FaMapMarkerAlt /></div>
-                <div>
-                  <h4 className="font-semibold text-lg">Address</h4>
-                  <p className="text-gray-200">B23, South Street, Chinnamuthaliyarchavadi,<br/>Villupuram, Tamil Nadu – 605602</p>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full">
+            <div className="flex flex-col items-center gap-4 bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+              <div className="text-vibrantAccent text-4xl mb-2"><FaPhoneAlt /></div>
+              <div>
+                <h4 className="font-semibold text-xl mb-2">Phone Number</h4>
+                <p className="text-gray-200">+91 9791351801<br/>+91 9344702133</p>
               </div>
             </div>
-          </div>
-
-          {/* Contact Form */}
-          <div className="lg:w-2/3 p-10 lg:p-16">
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                  <input type="text" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-oceanBlue transition-shadow" placeholder="John Doe" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                  <input type="email" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-oceanBlue transition-shadow" placeholder="john@example.com" />
-                </div>
-              </div>
+            <div className="flex flex-col items-center gap-4 bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+              <div className="text-vibrantAccent text-4xl mb-2"><FaEnvelope /></div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
-                <input type="tel" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-oceanBlue transition-shadow" placeholder="+91 98765 43210" />
+                <h4 className="font-semibold text-xl mb-2">Email</h4>
+                <p className="text-gray-200 break-all">eastcoastsurfeastcoastsurf<br/>@gmail.com</p>
               </div>
+            </div>
+            <div className="flex flex-col items-center gap-4 bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+              <div className="text-vibrantAccent text-4xl mb-2"><FaMapMarkerAlt /></div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                <textarea rows="4" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-oceanBlue transition-shadow" placeholder="How can we help you?"></textarea>
+                <h4 className="font-semibold text-xl mb-2">Address</h4>
+                <p className="text-gray-200">B23, South Street,<br/>Chinnamuthaliyarchavadi,<br/>Villupuram, TN – 605602</p>
               </div>
-              <button type="button" className="w-full bg-vibrantAccent text-deepBlue font-bold text-lg py-4 rounded-xl hover:bg-yellow-400 transition-colors shadow-md">
-                Send Message
-              </button>
-            </form>
+            </div>
           </div>
         </div>
 
