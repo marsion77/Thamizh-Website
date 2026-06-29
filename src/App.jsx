@@ -25,7 +25,7 @@ function App() {
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "B23, South Street, Chinnamuthaliyarchavadi",
-      "addressLocality": "Villupuram",
+      "addressLocality": "Villupuram (Pondicherry)",
       "addressRegion": "TN",
       "postalCode": "605602",
       "addressCountry": "IN"

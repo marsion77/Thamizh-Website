@@ -47,7 +47,7 @@ const Contact = () => {
               <div className="text-vibrantAccent text-4xl mb-2"><FaMapMarkerAlt /></div>
               <div>
                 <h4 className="font-semibold text-xl mb-2">Address</h4>
-                <p className="text-gray-200">B23, South Street,<br/>Chinnamuthaliyarchavadi,<br/>Villupuram, TN – 605602</p>
+                <p className="text-gray-200">B23, South Street,<br/>Chinnamuthaliyarchavadi,<br/>Villupuram (Pondicherry), TN – 605602</p>
               </div>
             </div>
           </div>

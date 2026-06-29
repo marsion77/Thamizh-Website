@@ -32,7 +32,7 @@ const Footer = () => {
                 <FaMapMarkerAlt className="text-vibrantAccent text-lg mt-1 flex-shrink-0" />
                 <span className="text-left">
                   B23, South Street, Chinnamuthaliyarchavadi,<br/>
-                  Villupuram, Tamil Nadu – 605602
+                  Villupuram (Pondicherry), Tamil Nadu – 605602
                 </span>
               </p>
             </div>
