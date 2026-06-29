@@ -23,15 +23,15 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-lightCyan/10">
-      <div className="container mx-auto px-6 md:px-12">
+    <section id="testimonials" className="py-24 bg-deepBlue relative overflow-visible">
+      <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="text-center mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-5xl font-bold text-deepBlue mb-4"
+            className="text-4xl md:text-5xl font-bold text-white mb-4"
           >
             Happy Customers
           </motion.h2>
@@ -51,7 +51,7 @@ const Testimonials = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-8 rounded-3xl shadow-lg border border-gray-50 flex flex-col items-center text-center hover:shadow-2xl transition-shadow"
+              className="bg-white p-6 md:p-10 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-4 border-white/20 flex flex-col items-center text-center hover:scale-105 transition-all duration-300"
             >
               <div className="flex text-vibrantAccent mb-4 gap-1 text-xl">
                 {[...Array(5)].map((_, i) => (

@@ -47,7 +47,7 @@ function App() {
 
   return (
     <HelmetProvider>
-      <div className="font-poppins">
+      <div className="font-poppins relative">
         <SEO 
           title="Surf School in Puducherry | East Coast Surf and Paddle"
           description="Join the best surf school in Pondicherry. Learn surfing, stand-up paddle boarding (SUP), and enjoy water sports in Puducherry. Book your beginner surf lessons today!"
@@ -55,17 +55,21 @@ function App() {
           type="website"
           schema={schema}
         />
-        <Navbar />
-        <Hero />
-        <Quotes />
-        <Adventures />
-        <WhyChooseUs />
-        <Gallery />
-        <Testimonials />
-        <Owner />
-        <Contact />
-        <FloatingWhatsApp />
-        <Footer />
+        <div className="relative z-10 flex flex-col min-h-screen">
+          <Navbar />
+          <main className="flex-grow">
+            <Hero />
+            <Quotes />
+            <Adventures />
+            <WhyChooseUs />
+            <Gallery />
+            <Testimonials />
+            <Owner />
+            <Contact />
+          </main>
+          <FloatingWhatsApp />
+          <Footer />
+        </div>
       </div>
     </HelmetProvider>
   );

@@ -5,6 +5,11 @@ import surfingImg from '../assets/surfing.png';
 import supImg from '../assets/standup_paddle.png';
 import singleKayakImg from '../assets/single_kayaking.png';
 import doubleKayakImg from '../assets/double_kayaking.png';
+import kayak3D from '../assets/kayak_3d.png';
+import dolphinImg from '../assets/CroppedDolphine.png';
+import kidKayakImg from '../assets/kidkayak.png';
+import manKayakImg from '../assets/mankayak.png';
+import manSurfImg from '../assets/mansurf.png';
 
 const AdventureCard = ({ adv, index }) => (
   <motion.div
@@ -53,7 +58,7 @@ const Adventures = () => {
     },
     {
       id: 2,
-      title: "Private Surfing Lesson",
+      title: "Private Surfing Lessons",
       image: surfingImg,
       description: "Get personalized 1-on-1 coaching to master surfing faster.",
       price: "Rs. 2000"
@@ -99,11 +104,21 @@ const Adventures = () => {
   ];
 
   return (
-    <section id="adventures" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-6 md:px-12">
+    <section id="adventures" className="py-20 bg-gray-50 relative overflow-hidden">
+      <div className="container mx-auto px-6 md:px-12 relative">
         
         {/* SECTION 1: Surfing & SUP */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 relative overflow-visible mt-10">
+          
+          {/* Static Man Surf Decoration (Left Side, above first heading) */}
+          <img
+            src={manSurfImg}
+            alt="Man Surfing"
+            aria-hidden="true"
+            className="absolute -top-16 lg:-top-24 left-0 lg:left-10 w-32 md:w-48 lg:w-56 object-contain drop-shadow-2xl z-20 hidden md:block pointer-events-none"
+            style={{ transform: 'scaleX(-1)' }}
+          />
+
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -128,7 +143,25 @@ const Adventures = () => {
         </div>
 
         {/* SECTION 2: Sea Kayaking & Mangroves */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 relative overflow-visible mt-20">
+
+          {/* Static Man Kayak Decoration (Left Side, Desktop/Tablet only) */}
+          <img
+            src={manKayakImg}
+            alt="Man Kayaking"
+            aria-hidden="true"
+            className="absolute -top-10 lg:-top-20 left-0 lg:left-10 w-32 md:w-48 lg:w-56 object-contain drop-shadow-2xl z-20 hidden md:block pointer-events-none"
+            style={{ transform: 'scaleX(-1)' }}
+          />
+
+          {/* Static Kid Kayak Decoration (Right Side, Desktop/Tablet only) */}
+          <img
+            src={kidKayakImg}
+            alt="Kid Kayaking"
+            aria-hidden="true"
+            className="absolute -top-10 lg:-top-20 right-0 lg:right-10 w-32 md:w-48 lg:w-56 object-contain drop-shadow-2xl z-20 hidden md:block pointer-events-none"
+          />
+
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

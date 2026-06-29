@@ -41,7 +41,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-7xl font-bold leading-tight mb-6"
           >
-            Surfing & Paddling Adventures in <span className="text-vibrantAccent">Pondicherry</span>
+            Surfing & Paddling Adventures in <span className="text-vibrantAccent drop-shadow-md">Pondicherry</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -63,7 +63,7 @@ const Hero = () => {
               </button>
             </Link>
             <Link to="adventures" smooth={true} duration={500} offset={-70}>
-              <button className="bg-vibrantAccent text-deepBlue font-bold px-8 py-3 rounded-full hover:bg-yellow-400 hover:scale-105 transition-all shadow-lg">
+              <button className="bg-oceanBlue text-white font-bold px-8 py-3 rounded-full hover:bg-deepBlue hover:scale-105 transition-all shadow-lg drop-shadow-lg">
                 Book Now
               </button>
             </Link>

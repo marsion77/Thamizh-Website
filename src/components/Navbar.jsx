@@ -29,11 +29,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`sticky top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-white py-4'}`}>
+    <nav className={`sticky top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-1' : 'bg-white py-2'}`}>
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2 md:gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <img src={logoImg} alt="East Coast Surf & Paddle Logo" className="w-20 h-20 md:w-28 md:h-28 object-contain drop-shadow-md" />
+          <img src={logoImg} alt="East Coast Surf & Paddle Logo" className="w-16 h-16 md:w-20 md:h-20 object-contain drop-shadow-md" />
           <span className="text-base md:text-xl font-bold tracking-wide text-deepBlue leading-tight drop-shadow-sm">
             East Coast<br/>
             <span className="text-oceanBlue text-sm md:text-xl block md:inline">Surf & Paddle</span>
@@ -59,15 +59,15 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <Link to="adventures" smooth={true} duration={500} offset={-100} className="bg-vibrantAccent text-deepBlue font-bold px-6 py-3 rounded-full hover:bg-yellow-400 hover:scale-105 transition-all shadow-lg cursor-pointer">
+          <Link to="adventures" smooth={true} duration={500} offset={-100} className="bg-oceanBlue text-white font-bold px-6 py-3 rounded-full hover:bg-deepBlue hover:scale-105 transition-all shadow-lg cursor-pointer">
             Book Now
           </Link>
         </div>
 
         {/* Mobile Nav Toggle */}
         <div className="md:hidden">
-          <button onClick={() => setNavOpen(!navOpen)} className="text-3xl text-deepBlue focus:outline-none">
-            {navOpen ? <FaTimes /> : <FaBars />}
+          <button onClick={() => setNavOpen(!navOpen)} aria-label="Toggle Navigation" className="text-3xl text-deepBlue focus:outline-none">
+            {navOpen ? <FaTimes aria-hidden="true" /> : <FaBars aria-hidden="true" />}
           </button>
         </div>
       </div>
@@ -91,8 +91,8 @@ const Navbar = () => {
               className="fixed top-0 right-0 w-64 h-screen bg-white shadow-2xl z-50 md:hidden flex flex-col"
             >
               <div className="flex justify-end p-6">
-                <button onClick={() => setNavOpen(false)} className="text-3xl text-deepBlue focus:outline-none">
-                  <FaTimes />
+                <button onClick={() => setNavOpen(false)} aria-label="Close Navigation" className="text-3xl text-deepBlue focus:outline-none">
+                  <FaTimes aria-hidden="true" />
                 </button>
               </div>
               <ul className="flex flex-col py-4 mt-2">
@@ -113,7 +113,7 @@ const Navbar = () => {
                   </li>
                 ))}
                 <li className="pt-8 px-6">
-                  <Link to="adventures" smooth={true} duration={500} offset={-100} onClick={() => setNavOpen(false)} className="bg-vibrantAccent text-deepBlue font-bold py-4 rounded-full shadow-md cursor-pointer block text-center w-full">
+                  <Link to="adventures" smooth={true} duration={500} offset={-100} onClick={() => setNavOpen(false)} className="bg-oceanBlue text-white font-bold py-4 rounded-full shadow-md cursor-pointer block text-center w-full hover:bg-deepBlue transition-colors">
                     Book Now
                   </Link>
                 </li>

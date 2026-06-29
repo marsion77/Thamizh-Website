@@ -24,30 +24,30 @@ const Contact = () => {
           ></motion.div>
         </div>
 
-        <div className="max-w-5xl mx-auto bg-oceanBlue text-white p-10 md:p-16 rounded-3xl shadow-2xl flex flex-col items-center text-center">
+        <div className="max-w-5xl mx-auto bg-oceanBlue text-white p-6 md:p-16 rounded-3xl shadow-2xl flex flex-col items-center text-center">
           <h3 className="text-3xl font-bold mb-6">Get in Touch</h3>
           <p className="mb-12 text-lightCyan max-w-2xl text-lg">We'd love to hear from you. Reach out to us for any inquiries or to book your adventure.</p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full">
-            <div className="flex flex-col items-center gap-4 bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
-              <div className="text-vibrantAccent text-4xl mb-2"><FaPhoneAlt /></div>
+            <div className="flex flex-col items-center gap-4 bg-white p-6 rounded-2xl shadow-xl hover:-translate-y-2 transition-all duration-300">
+              <div className="text-accentLime text-4xl mb-2"><FaPhoneAlt /></div>
               <div>
-                <h4 className="font-semibold text-xl mb-2">Phone Number</h4>
-                <p className="text-gray-200">+91 9791351801<br/>+91 9344702133</p>
+                <h4 className="font-bold text-xl mb-2 text-deepBlue">Phone Number</h4>
+                <p className="text-gray-600 font-medium">+91 9791351801<br/>+91 9344702133</p>
               </div>
             </div>
-            <div className="flex flex-col items-center gap-4 bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+            <div className="flex flex-col items-center gap-4 bg-white p-6 rounded-2xl shadow-xl hover:-translate-y-2 transition-all duration-300">
               <div className="text-vibrantAccent text-4xl mb-2"><FaEnvelope /></div>
               <div>
-                <h4 className="font-semibold text-xl mb-2">Email</h4>
-                <p className="text-gray-200 break-all">eastcoastsurfeastcoastsurf<br/>@gmail.com</p>
+                <h4 className="font-bold text-xl mb-2 text-deepBlue">Email</h4>
+                <p className="text-gray-600 font-medium break-all">eastcoastsurfeastcoastsurf<br/>@gmail.com</p>
               </div>
             </div>
-            <div className="flex flex-col items-center gap-4 bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
-              <div className="text-vibrantAccent text-4xl mb-2"><FaMapMarkerAlt /></div>
+            <div className="flex flex-col items-center gap-4 bg-white p-6 rounded-2xl shadow-xl hover:-translate-y-2 transition-all duration-300">
+              <div className="text-accentOrange text-4xl mb-2"><FaMapMarkerAlt /></div>
               <div>
-                <h4 className="font-semibold text-xl mb-2">Address</h4>
-                <p className="text-gray-200">B23, South Street,<br/>Chinnamuthaliyarchavadi,<br/>Villupuram (Pondicherry), TN – 605602</p>
+                <h4 className="font-bold text-xl mb-2 text-deepBlue">Address</h4>
+                <p className="text-gray-600 font-medium">B23, South Street,<br/>Chinnamuthaliyarchavadi,<br/>Villupuram (Pondicherry), TN – 605602</p>
               </div>
             </div>
           </div>

@@ -62,20 +62,20 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h4 className="text-xl font-bold mb-6 text-lightCyan">Follow Us</h4>
             <div className="flex gap-4 justify-center md:justify-start">
-              <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-vibrantAccent hover:text-slate-900 transition-colors text-xl">
-                <FaFacebookF />
+              <a href="#" aria-label="Visit our Facebook page" className="bg-white/10 p-3 rounded-full hover:bg-[#1877F2] hover:text-white transition-colors text-xl">
+                <FaFacebookF aria-hidden="true" />
               </a>
-              <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-vibrantAccent hover:text-slate-900 transition-colors text-xl">
-                <FaInstagram />
+              <a href="#" aria-label="Visit our Instagram page" className="bg-white/10 p-3 rounded-full hover:bg-gradient-to-r hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:text-white transition-all text-xl">
+                <FaInstagram aria-hidden="true" />
               </a>
-              <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-vibrantAccent hover:text-slate-900 transition-colors text-xl">
-                <FaTwitter />
+              <a href="#" aria-label="Visit our Twitter page" className="bg-white/10 p-3 rounded-full hover:bg-[#1DA1F2] hover:text-white transition-colors text-xl">
+                <FaTwitter aria-hidden="true" />
               </a>
-              <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-[#FF0000] hover:text-white transition-colors text-xl">
-                <FaYoutube />
+              <a href="#" aria-label="Visit our YouTube channel" className="bg-white/10 p-3 rounded-full hover:bg-[#FF0000] hover:text-white transition-colors text-xl">
+                <FaYoutube aria-hidden="true" />
               </a>
-              <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-[#25D366] hover:text-white transition-colors text-xl">
-                <FaWhatsapp />
+              <a href="#" aria-label="Contact us on WhatsApp" className="bg-white/10 p-3 rounded-full hover:bg-[#25D366] hover:text-white transition-colors text-xl">
+                <FaWhatsapp aria-hidden="true" />
               </a>
             </div>
           </div>
