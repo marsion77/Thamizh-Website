@@ -88,7 +88,7 @@ const Hero = () => {
                 className="relative rounded-2xl overflow-hidden shadow-2xl group cursor-pointer border-2 border-white/20"
                 style={{ height: '80%' }}
               >
-                <img src={card.img} alt={card.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                <img src={card.img} alt={`${card.title} classes in Puducherry`} loading="eager" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 text-center">
                   <h3 className="text-white font-bold text-lg">{card.title}</h3>
