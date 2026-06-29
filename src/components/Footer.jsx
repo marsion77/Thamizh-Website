@@ -58,6 +58,15 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Operating Hours */}
+          <div className="text-center md:text-left">
+            <h4 className="text-xl font-bold mb-6 text-lightCyan">Operating Hours</h4>
+            <div className="text-gray-300 space-y-2">
+              <p className="font-semibold text-white text-lg">Open All Days</p>
+              <p className="text-vibrantAccent text-xl font-bold">5:30 AM - 6:30 PM</p>
+            </div>
+          </div>
+
           {/* Social Media */}
           <div className="text-center md:text-left">
             <h4 className="text-xl font-bold mb-6 text-lightCyan">Follow Us</h4>

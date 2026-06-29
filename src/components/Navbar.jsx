@@ -61,6 +61,10 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+          <div className="hidden lg:flex flex-col items-end mr-2">
+            <span className="text-sm font-bold text-gray-800">Open All Days</span>
+            <span className="text-xs font-bold text-oceanBlue">5:30 AM - 6:30 PM</span>
+          </div>
           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="bg-oceanBlue text-white font-bold px-6 py-3 rounded-full hover:bg-deepBlue hover:scale-105 transition-all shadow-lg cursor-pointer">
             Book Now
           </a>
@@ -114,7 +118,11 @@ const Navbar = () => {
                     </Link>
                   </li>
                 ))}
-                <li className="pt-8 px-6">
+                <li className="pt-6 px-6 text-center">
+                  <span className="block text-sm font-bold text-gray-600">Open All Days</span>
+                  <span className="block text-base font-bold text-oceanBlue">5:30 AM - 6:30 PM</span>
+                </li>
+                <li className="pt-4 px-6">
                   <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => setNavOpen(false)} className="bg-oceanBlue text-white font-bold py-4 rounded-full shadow-md cursor-pointer block text-center w-full hover:bg-deepBlue transition-colors">
                     Book Now
                   </a>
