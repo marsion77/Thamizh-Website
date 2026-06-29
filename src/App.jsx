@@ -19,7 +19,7 @@ function App() {
     "@type": ["SportsActivityLocation", "LocalBusiness", "Organization"],
     "name": "East Coast Surf and Paddle",
     "description": "Premium surfing and stand-up paddle boarding (SUP) school located in Puducherry. Certified instructors, beginner surf lessons, and paddling adventures.",
-    "url": "https://eastcoastsurf.com/",
+    "url": "https://www.eastcoastsurfandpaddle.com/",
     "telephone": ["+91 9791351801", "+91 9344702133"],
     "email": "eastcoastsurfeastcoastsurf@gmail.com",
     "address": {
