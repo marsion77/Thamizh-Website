@@ -9,6 +9,8 @@ import singleKayakImg from '../assets/single_kayaking.png';
 import doubleKayakImg from '../assets/double_kayaking.png';
 
 const Hero = () => {
+  const whatsappUrl = "https://wa.me/919791351801?text=Hello%20East%20Coast%20Surf%20and%20Paddle%2C%0A%0AI%20came%20across%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20ocean%20adventures%20and%20pricing.%0A%0APlease%20share%20the%20details.%0A%0AThank%20you.";
+
   const floatingCards = [
     { title: "Surfing", img: surfingImg, delay: 0.2, yOffset: -20 },
     { title: "Stand-Up Paddling", img: supImg, delay: 0.4, yOffset: 20 },
@@ -62,11 +64,9 @@ const Hero = () => {
                 Explore Adventures
               </button>
             </Link>
-            <Link to="adventures" smooth={true} duration={500} offset={-70}>
-              <button className="bg-oceanBlue text-white font-bold px-8 py-3 rounded-full hover:bg-deepBlue hover:scale-105 transition-all shadow-lg drop-shadow-lg">
-                Book Now
-              </button>
-            </Link>
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="bg-oceanBlue text-white font-bold px-8 py-3 rounded-full hover:bg-deepBlue hover:scale-105 transition-all shadow-lg drop-shadow-lg inline-block text-center cursor-pointer">
+              Book Now
+            </a>
           </motion.div>
         </motion.div>
 

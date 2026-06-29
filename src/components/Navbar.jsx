@@ -7,6 +7,8 @@ import logoImg from '../assets/logo.png';
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  
+  const whatsappUrl = "https://wa.me/919791351801?text=Hello%20East%20Coast%20Surf%20and%20Paddle%2C%0A%0AI%20came%20across%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20ocean%20adventures%20and%20pricing.%0A%0APlease%20share%20the%20details.%0A%0AThank%20you.";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,9 +61,9 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <Link to="adventures" smooth={true} duration={500} offset={-100} className="bg-oceanBlue text-white font-bold px-6 py-3 rounded-full hover:bg-deepBlue hover:scale-105 transition-all shadow-lg cursor-pointer">
+          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="bg-oceanBlue text-white font-bold px-6 py-3 rounded-full hover:bg-deepBlue hover:scale-105 transition-all shadow-lg cursor-pointer">
             Book Now
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Nav Toggle */}
@@ -113,9 +115,9 @@ const Navbar = () => {
                   </li>
                 ))}
                 <li className="pt-8 px-6">
-                  <Link to="adventures" smooth={true} duration={500} offset={-100} onClick={() => setNavOpen(false)} className="bg-oceanBlue text-white font-bold py-4 rounded-full shadow-md cursor-pointer block text-center w-full hover:bg-deepBlue transition-colors">
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => setNavOpen(false)} className="bg-oceanBlue text-white font-bold py-4 rounded-full shadow-md cursor-pointer block text-center w-full hover:bg-deepBlue transition-colors">
                     Book Now
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </motion.div>
