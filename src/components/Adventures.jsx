@@ -110,12 +110,12 @@ const Adventures = () => {
         {/* SECTION 1: Surfing & SUP */}
         <div className="text-center mb-12 relative overflow-visible mt-10">
           
-          {/* Static Man Surf Decoration (Left Side, above first heading) */}
+          {/* Static Man Surf Decoration - centered on mobile, absolute on md+ */}
           <img
             src={manSurfImg}
             alt="Man Surfing"
             aria-hidden="true"
-            className="absolute -top-16 lg:-top-24 left-0 lg:left-10 w-32 md:w-48 lg:w-56 object-contain drop-shadow-2xl z-20 hidden md:block pointer-events-none"
+            className="block mx-auto mb-2 md:absolute md:mb-0 md:-top-16 lg:-top-24 md:left-0 lg:left-10 w-28 sm:w-36 md:w-48 lg:w-56 object-contain drop-shadow-2xl z-20 pointer-events-none"
             style={{ transform: 'scaleX(-1)' }}
           />
 
@@ -145,22 +145,22 @@ const Adventures = () => {
         {/* SECTION 2: Sea Kayaking & Mangroves */}
         <div className="text-center mb-12 relative overflow-visible mt-20">
 
-          {/* Static Man Kayak Decoration (Left Side, Desktop/Tablet only) */}
-          <img
-            src={manKayakImg}
-            alt="Man Kayaking"
-            aria-hidden="true"
-            className="absolute -top-10 lg:-top-20 left-0 lg:left-10 w-32 md:w-48 lg:w-56 object-contain drop-shadow-2xl z-20 hidden md:block pointer-events-none"
-            style={{ transform: 'scaleX(-1)' }}
-          />
-
-          {/* Static Kid Kayak Decoration (Right Side, Desktop/Tablet only) */}
-          <img
-            src={kidKayakImg}
-            alt="Kid Kayaking"
-            aria-hidden="true"
-            className="absolute -top-10 lg:-top-20 right-0 lg:right-10 w-32 md:w-48 lg:w-56 object-contain drop-shadow-2xl z-20 hidden md:block pointer-events-none"
-          />
+          {/* Kayak decorations - side by side centered on mobile, absolute on md+ */}
+          <div className="flex justify-center gap-4 mb-2 md:contents">
+            <img
+              src={manKayakImg}
+              alt="Man Kayaking"
+              aria-hidden="true"
+              className="w-28 sm:w-36 md:w-48 lg:w-56 object-contain drop-shadow-2xl z-20 pointer-events-none md:absolute md:-top-10 lg:-top-20 md:left-0 lg:left-10"
+              style={{ transform: 'scaleX(-1)' }}
+            />
+            <img
+              src={kidKayakImg}
+              alt="Kid Kayaking"
+              aria-hidden="true"
+              className="w-28 sm:w-36 md:w-48 lg:w-56 object-contain drop-shadow-2xl z-20 pointer-events-none md:absolute md:-top-10 lg:-top-20 md:right-0 lg:right-10"
+            />
+          </div>
 
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}

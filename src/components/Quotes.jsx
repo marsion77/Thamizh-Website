@@ -31,14 +31,14 @@ const Quotes = () => {
         src={dolphinImg}
         alt="Dolphin"
         aria-hidden="true"
-        className="absolute right-10 top-2 lg:top-4 w-32 md:w-48 lg:w-56 object-contain drop-shadow-2xl z-10 hidden md:block pointer-events-none"
+        className="absolute right-4 sm:right-10 top-0 sm:top-2 lg:top-4 w-28 sm:w-36 md:w-48 lg:w-56 object-contain drop-shadow-2xl z-10 pointer-events-none"
       />
       {/* Stable Dolphin 2 (Left side) */}
       <img
         src={dolphinImg}
         alt="Dolphin"
         aria-hidden="true"
-        className="absolute left-10 top-2 lg:top-4 w-32 md:w-48 lg:w-56 object-contain drop-shadow-2xl z-10 hidden md:block pointer-events-none"
+        className="absolute left-4 sm:left-10 top-0 sm:top-2 lg:top-4 w-28 sm:w-36 md:w-48 lg:w-56 object-contain drop-shadow-2xl z-10 pointer-events-none"
         style={{ transform: 'scaleX(-1)' }}
       />
       <div className="container mx-auto px-6 md:px-12 relative z-10">
