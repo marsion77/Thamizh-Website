@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import SEO from './components/SEO';
+import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Quotes from './components/Quotes';
@@ -14,6 +15,12 @@ import FloatingWhatsApp from './components/FloatingWhatsApp';
 import Footer from './components/Footer';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handlePreloaderFinished = useCallback(() => {
+    setIsLoading(false);
+  }, []);
+
   const schema = {
     "@context": "https://schema.org",
     "@type": ["SportsActivityLocation", "LocalBusiness", "Organization"],
@@ -55,7 +62,16 @@ function App() {
           type="website"
           schema={schema}
         />
-        <div className="relative z-10 flex flex-col min-h-screen">
+        {/* Preloader with logo */}
+        <Preloader onFinished={handlePreloaderFinished} />
+
+        {/* Main site content - always in DOM, hidden while loading to prevent layout shift */}
+        <div 
+          className={`relative z-10 flex flex-col min-h-screen transition-opacity duration-500 ${
+            isLoading ? 'opacity-0 overflow-hidden h-0' : 'opacity-100'
+          }`}
+          aria-hidden={isLoading}
+        >
           <Navbar />
           <main className="flex-grow">
             <Hero />
