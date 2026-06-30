@@ -1,61 +1,141 @@
-# Thamizh Website
+# 🏄 East Coast Surf and Paddle
 
-A modern and dynamic personal/portfolio website built using **React**, **Vite**, and **Tailwind CSS**. It incorporates beautiful animations and interactive elements to provide a premium user experience.
+The official website for **East Coast Surf and Paddle** — a premium surfing, stand-up paddle boarding (SUP), and sea kayaking school located in **Puducherry (Pondicherry), India**.
 
-## 🚀 Technologies Used
+🌐 **Live Site**: [eastcoastsurfandpaddle.com](https://www.eastcoastsurfandpaddle.com/)
 
-- **Framework**: React 19 + Vite
-- **Styling**: Tailwind CSS & Vanilla CSS
-- **Animations**: Framer Motion
-- **UI Components**: Material UI (MUI)
-- **Icons**: React Icons
-- **Routing/Navigation**: React Scroll
-- **SEO/Head Management**: React Helmet Async
+---
 
-## 📦 Getting Started
+## 🌊 About
+
+East Coast Surf and Paddle offers ocean adventures along the scenic east coast of India. Whether you're a beginner looking to catch your first wave or an experienced paddler seeking mangrove kayaking trails, we've got you covered with certified instructors and quality equipment.
+
+**📍 Location**: B23, South Street, Chinnamuthaliyarchavadi, Villupuram (Pondicherry), Tamil Nadu – 605602  
+**📞 Phone**: +91 9791351801 | +91 9344702133  
+**📧 Email**: eastcoastsurfeastcoastsurf@gmail.com  
+**🕐 Hours**: Open all days, 5:30 AM – 6:30 PM
+
+---
+
+## 🏖️ Adventures We Offer
+
+### Surfing & Stand-Up Paddling
+| Adventure | Price | Duration |
+|---|---|---|
+| Group Surfing Lessons | ₹1,600 | 90 mins |
+| Private Surfing Lessons | ₹2,000 | 90 mins |
+| Stand-Up Paddling (SUP) | ₹1,800 | 90 mins |
+
+### Sea Kayaking & Mangroves
+| Adventure | Price | Duration |
+|---|---|---|
+| Single Seater Sea Kayaking | ₹1,500 | 90 mins |
+| Double Seater Sea Kayaking | ₹2,500 | 90 mins |
+| Mangrove Single Seater | ₹1,200 | 90 mins |
+| Mangrove Double Seater | ₹2,500 | 90 mins |
+
+---
+
+## 🚀 Tech Stack
+
+This website is built with modern web technologies for speed, SEO, and a premium user experience.
+
+| Technology | Purpose |
+|---|---|
+| [React 19](https://react.dev/) | UI Framework |
+| [Vite](https://vitejs.dev/) | Build Tool & Dev Server |
+| [Tailwind CSS](https://tailwindcss.com/) | Utility-first Styling |
+| [Framer Motion](https://www.framer.com/motion/) | Animations & Transitions |
+| [Material UI](https://mui.com/) | UI Components |
+| [React Icons](https://react-icons.github.io/react-icons/) | Icon Library |
+| [React Scroll](https://www.npmjs.com/package/react-scroll) | Smooth Scroll Navigation |
+| [React Helmet Async](https://www.npmjs.com/package/react-helmet-async) | SEO & Meta Tags |
+
+---
+
+## 📂 Project Structure
+
+```
+├── public/                 # Static assets (favicon, robots.txt, sitemap)
+├── src/
+│   ├── assets/             # Images and media
+│   ├── components/
+│   │   ├── Navbar.jsx      # Navigation bar
+│   │   ├── Hero.jsx        # Hero section with floating activity cards
+│   │   ├── Quotes.jsx      # Inspirational quotes
+│   │   ├── Adventures.jsx  # Surfing, SUP & Kayaking packages
+│   │   ├── WhyChooseUs.jsx # Key selling points
+│   │   ├── Gallery.jsx     # Photo gallery
+│   │   ├── Testimonials.jsx# Customer reviews
+│   │   ├── Owner.jsx       # Founder's message
+│   │   ├── Contact.jsx     # Contact info & Google Map
+│   │   ├── Footer.jsx      # Footer with links & socials
+│   │   ├── FloatingWhatsApp.jsx # WhatsApp chat button
+│   │   └── SEO.jsx         # SEO meta component
+│   ├── App.jsx             # Main app with structured data (JSON-LD)
+│   ├── App.css             # Global styles
+│   ├── index.css           # Tailwind imports
+│   └── main.jsx            # App entry point
+├── index.html              # HTML template with full SEO meta tags
+├── tailwind.config.js      # Tailwind configuration
+├── vite.config.js          # Vite configuration
+└── package.json
+```
+
+---
+
+## 🛠️ Getting Started
 
 ### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
 
 ### Installation
 
-1. Clone the repository:
-   ```bash
-   git clone <your-github-repo-url>
-   ```
+```bash
+# Clone the repository
+git clone https://github.com/marsion77/Thamizh-Website.git
 
-2. Navigate into the project directory:
-   ```bash
-   cd thamizh-website
-   ```
+# Navigate into the project
+cd Thamizh-Website
 
-3. Install the dependencies:
-   ```bash
-   npm install
-   ```
+# Install dependencies
+npm install
+```
 
-### Running Locally
+### Development
 
-To start the development server, run:
 ```bash
 npm run dev
 ```
-Then, open your browser and visit `http://localhost:5173` (or the port specified in your terminal).
 
-### Building for Production
+Open `http://localhost:5173` in your browser.
 
-To create a production-ready build, run:
+### Production Build
+
 ```bash
 npm run build
 ```
-The output will be generated in the `dist` folder.
 
-## 🛠 Features
+The optimised output will be in the `dist/` folder.
 
-- **Responsive Design**: fully functional on mobile, tablet, and desktop.
-- **Modern UI**: utilizes vibrant aesthetics, dynamic layouts, and glassmorphism.
-- **Smooth Animations**: leverages Framer Motion for scroll-based and interactive animations.
+---
+
+## ✨ Key Features
+
+- **Fully Responsive** — looks great on mobile, tablet, and desktop
+- **Smooth Animations** — scroll-triggered and hover animations powered by Framer Motion
+- **SEO Optimised** — structured data (JSON-LD), Open Graph, Twitter Cards, sitemap, and robots.txt
+- **WhatsApp Integration** — floating chat button for instant booking
+- **Google Maps** — embedded map showing the location
+- **Modern Design** — glassmorphism, gradients, and micro-animations
+
+---
 
 ## 📄 License
 
-This project is open-source and available under the MIT License.
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+> *Ride the Waves, Explore the Ocean, Create Memories.* 🌊
