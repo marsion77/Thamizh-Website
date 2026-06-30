@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { FaFacebookF, FaInstagram, FaTwitter, FaWater, FaYoutube, FaWhatsapp, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTwitter, FaWater, FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { BsWhatsapp } from 'react-icons/bs';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear(); // or hardcode 2026 as per prompt
@@ -84,7 +85,7 @@ const Footer = () => {
                 <FaYoutube aria-hidden="true" />
               </a>
               <a href="#" aria-label="Contact us on WhatsApp" className="bg-white/10 p-3 rounded-full hover:bg-[#25D366] hover:text-white transition-colors text-xl">
-                <FaWhatsapp aria-hidden="true" />
+                <BsWhatsapp aria-hidden="true" />
               </a>
             </div>
           </div>

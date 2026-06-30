@@ -70,7 +70,8 @@ const WhyChooseUs = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-8 rounded-3xl text-center hover:-translate-y-2 hover:shadow-2xl transition-all border border-gray-100 shadow-xl"
+              whileHover={{ rotate: 2, scale: 1.02 }}
+              className="bg-white p-8 rounded-3xl text-center hover:-translate-y-2 hover:shadow-2xl hover:border-turquoise transition-all duration-300 border-2 border-transparent shadow-xl"
             >
               <motion.div 
                 animate={{ y: [0, -10, 0] }}

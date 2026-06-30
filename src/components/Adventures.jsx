@@ -17,8 +17,8 @@ const AdventureCard = ({ adv, index }) => (
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: "-50px" }}
     transition={{ duration: 0.6, delay: index * 0.1 }}
-    whileHover={{ y: -15 }}
-    className="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 flex flex-col group"
+    whileHover={{ y: -20, scale: 1.03 }}
+    className="bg-white rounded-3xl overflow-hidden shadow-xl border-2 border-transparent hover:border-turquoise hover:shadow-[0_20px_40px_rgba(37,211,102,0.3)] transition-all duration-300 flex flex-col group"
   >
     <div className="relative h-64 overflow-hidden">
       <img 
